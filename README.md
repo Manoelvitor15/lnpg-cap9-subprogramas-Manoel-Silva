@@ -66,11 +66,26 @@ Tarefa 3 — Passagem de Parâmetros por Valor em Java
 
 Descrição: Implementação de um sistema utilizando objetos para compreender o comportamento de referências em Java e entender por que alterações em objetos permanecem após chamadas de métodos.
 
-Instruções de execução:
+Intruções de execução:
+Execute a versão monolítica no VS Code inserindo o seguinte comando no terminal:
+1- javac PassagemPorValorMonolitico.java ( compila arquivo )
+2- java PassagemPorValorMonolitico ( executa o programa )
 
-Execute no VS Code inserindo o seguinte comando no terminal:
+Execute a versão modularizada no VS Code inserindo o seguinte comando no terminal:
 1- javac PassagemPorValor.java ( compila arquivo )
 2- java PassagemPorValor ( executa o programa )
+
+Legibilidade: A versão modularizada possui melhor organização, pois separa a lógica em métodos específicos. A monolítica concentra todas as instruções no main, dificultando a leitura em programas maiores.
+
+Reutilização: Na modularização, métodos podem ser reutilizados em outros programas. Na versão monolítica, o código fica preso ao bloco principal.
+
+Facilidade de Manutenção: A modularização facilita correções e alterações, pois cada método possui uma função específica. Na monolítica, mudanças exigem maior atenção devido à concentração da lógica em um único local.
+
+Clareza do Fluxo: A versão modularizada apresenta um fluxo mais organizado, mostrando claramente cada etapa do processo. Na monolítica, todas as ações ficam misturadas no mesmo bloco.
+
+Tamanho dos Métodos: Métodos menores tornam o código mais limpo e simples de entender. Na monolítica, o main() tende a crescer conforme o sistema aumenta.
+
+Coesão: Na versão modularizada, cada método executa apenas uma responsabilidade específica. Já na monolítica, várias tarefas ficam agrupadas no mesmo método.
 
 Por que o valor original não mudou?
 O valor original não mudou porque o método alterarNumero() recebeu apenas uma cópia da variável numero. Portanto, a alteração feita em x não afeta a variável criada no main.
@@ -86,7 +101,7 @@ ausência de mudança na variável original do main.
 
 ***************************************************************************************************************************************************************************
 
-Tarefa 4 — Objetos e Referência em 
+Tarefa 4 — Objetos e Referência em Java
 
 Descrição: Desenvolvimento de um programa em Java para demonstrar o comportamento de objetos em chamadas de métodos. A atividade utiliza uma classe `Produto` para mostrar que, embora Java utilize passagem por valor, o valor copiado em objetos é a referência, permitindo que alterações realizadas no objeto permaneçam após a execução do método.
 
