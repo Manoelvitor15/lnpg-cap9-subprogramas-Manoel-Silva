@@ -1,15 +1,4 @@
-﻿# Implemente um sistema de vendas em Python que:
-# leia produtos;
-# leia quantidade;
-# leia preço unitário;
-# calcule subtotal;
-# calcule desconto:
-# 5% acima de R$ 200;
-# 10% acima de R$ 500;
-# calcule total final;
-# imprima cupom formatado.
-
-produtos = {
+﻿produtos = {
     1: ("PRODUTO A", 50),
     2: ("PRODUTO B", 20),
     3: ("PRODUTO C", 40),
