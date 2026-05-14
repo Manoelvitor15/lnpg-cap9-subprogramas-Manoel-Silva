@@ -2,17 +2,17 @@
 # Nome: Manoel Vitor Vieira da Silva
 # Turma: LNPG-BSI-2026.1
 ***************************************************************************************************************************************************************************
-TAREFA-1 JAVA
+Tarefa 1 — Modularização em Java
 
 Descrição: O sistema de controle acadêmico em Java foi desenvolvido para cadastrar alunos, registrar notas, calcular médias e informar a situação final de cada estudante. O programa utiliza modularização para organizar as funcionalidades em métodos específicos, tornando o código mais legível, reutilizável e fácil de manter.
 
 Intruções de execução:
 Execute a versão monolítica no VS Code inserindo o seguinte comando no terminal:
-1- javac ControleAcademicoMonolitico.java ( cria uma arquivo .class )
+1- javac ControleAcademicoMonolitico.java ( compila arquivo )
 2- java ControleAcademicoMonolitico ( executa o programa )
 
 Execute a versão modularizada no VS Code inserindo o seguinte comando no terminal:
-1- javac ControleAcademico.java ( cria uma arquivo .class )
+1- javac ControleAcademico.java ( compila arquivo )
 2- java ControleAcademico ( executa o programa )
 
 Comparação:
@@ -29,7 +29,7 @@ Coesão: Cada função executa apenas uma tarefa específica, melhorando a organ
 
 ***************************************************************************************************************************************************************************
 
-TAREFA-2 PYTHON
+Tarefa 2 — Modularização em Python
 
 Descrição: Desenvolvimento de um sistema de compras em Python utilizando funções para organizar o programa. O sistema permite selecionar produtos, calcular subtotais, aplicar descontos conforme o valor da compra, gerar o total final e exibir um cupom com as informações da compra.
 
@@ -62,3 +62,41 @@ Coesão: cada função executa apenas uma responsabilidade específica, aumentan
 
 ***************************************************************************************************************************************************************************
 
+Tarefa 3 — Passagem de Parâmetros por Valor em Java
+
+Descrição: Implementação de um sistema utilizando objetos para compreender o comportamento de referências em Java e entender por que alterações em objetos permanecem após chamadas de métodos.
+
+Instruções de execução:
+
+Execute no VS Code inserindo o seguinte comando no terminal:
+1- javac PassagemPorValor.java ( compila arquivo )
+2- java PassagemPorValor ( executa o programa )
+
+Por que o valor original não mudou?
+O valor original não mudou porque o método alterarNumero() recebeu apenas uma cópia da variável numero. Portanto, a alteração feita em x não afeta a variável criada no main.
+
+Passagem por valor: Na passagem por valor, o método recebe apenas uma cópia do valor da variável original. Assim, qualquer alteração feita dentro do método acontece somente nessa cópia.
+
+Valor copiado: Foi copiado o valor armazenado na variável numero, que inicialmente era 10.
+
+A saída demonstra:
+
+mudança local dentro do método;
+ausência de mudança na variável original do main.
+
+***************************************************************************************************************************************************************************
+
+Tarefa 4 — Objetos e Referência em 
+
+Descrição: Desenvolvimento de um programa em Java para demonstrar o comportamento de objetos em chamadas de métodos. A atividade utiliza uma classe `Produto` para mostrar que, embora Java utilize passagem por valor, o valor copiado em objetos é a referência, permitindo que alterações realizadas no objeto permaneçam após a execução do método.
+
+Instruções de execução:
+
+javac aplicarDesconto.java ( compila arquivo )
+java aplicarDesconto ( executa programa )
+
+Java possui passagem por referência verdadeira? Não. Java utiliza apenas passagem por valor.
+
+O que é copiado na chamada? No caso de objetos, o valor copiado é a referência do objeto na memória.
+
+Por que as alterações permanecem após a chamada? Porque tanto a variável original quanto o parâmetro do método apontam para o mesmo objeto. Assim, alterações feitas no objeto dentro do método permanecem após a execução.
