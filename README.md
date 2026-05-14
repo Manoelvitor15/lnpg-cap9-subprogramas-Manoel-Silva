@@ -131,3 +131,47 @@ Java possui passagem por referência verdadeira? Não. Java utiliza apenas passa
 O que é copiado na chamada? No caso de objetos, o valor copiado é a referência do objeto na memória.
 
 Por que as alterações permanecem após a chamada? Porque tanto a variável original quanto o parâmetro do método apontam para o mesmo objeto. Assim, alterações feitas no objeto dentro do método permanecem após a execução.
+
+***************************************************************************************************************************************************************************
+
+Tarefa 5 - Livre - Sistema Bancário Simples
+
+Descrição: Desenvolvimento de um sistema bancário simples em Java utilizando modularização. O sistema deve permitir operações básicas como depósito, saque, consulta de saldo e exibição de informações da conta. O objetivo é aplicar o uso de subprogramas, passagem de parâmetros, reutilização de funções e separação de responsabilidades para tornar o código mais organizado e fácil de manter.
+
+Execute a versão modularizada no VS Code inserindo o seguinte comando no terminal:
+1- javac SistemaBancario.java ( compila arquivo )
+2- java SistemaBancario ( executa o programa )
+
+
+Subprogramas Utilizados:
+* criarTitular() → lê o nome do titular;
+* depositar() → adiciona valor ao saldo;
+* sacar() → realiza saque;
+* consultarSaldo() → exibe saldo atual;
+* exibirMenu() → mostra o menu do sistema;
+* imprimirDados() → exibe os dados finais da conta.
+
+Diagrama Simples das Chamadas:
+main()
+ ├── criarTitular()
+ ├── exibirMenu()
+ ├── depositar()
+ ├── sacar()
+ ├── consultarSaldo()
+ └── imprimirDados()
+
+Justificativa da Divisão dos Subprogramas: A divisão em subprogramas foi realizada para separar as responsabilidades do sistema, deixando cada método responsável por apenas uma tarefa específica. Isso melhora a organização, facilita a manutenção e reduz repetição de código.
+
+Dificuldades Encontradas:
+* Organizar corretamente o fluxo do menu;
+* Controlar saldo após operações;
+* Separar funções sem repetir lógica;
+* Utilizar parâmetros e retornos corretamente.
+
+Vantagens da Modularização:
+* Melhor legibilidade do código;
+* Facilidade de manutenção;
+* Reutilização de funções;
+* Organização do sistema;
+* Métodos menores e mais claros;
+* Maior facilidade para identificar erros.
