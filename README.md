@@ -1,7 +1,31 @@
 # lnpg-cap9-subprogramas-Manoel-Silva
 # Nome: Manoel Vitor Vieira da Silva
 # Turma: LNPG-BSI-2026.1
+***************************************************************************************************************************************************************************
+TAREFA-1 JAVA
 
+Descrição: O sistema de controle acadêmico em Java foi desenvolvido para cadastrar alunos, registrar notas, calcular médias e informar a situação final de cada estudante. O programa utiliza modularização para organizar as funcionalidades em métodos específicos, tornando o código mais legível, reutilizável e fácil de manter.
+
+Intruções de execução:
+Execute a versão monolítica no VS Code inserindo o seguinte comando no terminal:
+1- javac ControleAcademicoMonolitico.java ( cria uma arquivo .class )
+2- java ControleAcademicoMonolitico ( executa o programa )
+
+Execute a versão modularizada no VS Code inserindo o seguinte comando no terminal:
+1- javac ControleAcademico.java ( cria uma arquivo .class )
+2- java ControleAcademico ( executa o programa )
+
+Comparação:
+Versão Monolítica: A versão monolítica concentra toda a lógica do sistema dentro do método main, deixando o código maior e mais difícil de organizar. Apesar de funcionar corretamente, possui menor legibilidade, manutenção mais complexa e pouca reutilização de código.
+
+Versão Modularizada: A versão modularizada divide o sistema em métodos específicos, como leitura de dados, cálculo de média e impressão do relatório. Essa organização melhora a legibilidade, facilita a manutenção, reduz repetições e torna o código mais reutilizável e estruturado.
+
+Legibilidade: Na versão modularizada, o código fica mais organizado e fácil de entender, pois cada função possui uma responsabilidade específica.
+Reutilização: As funções podem ser reutilizadas em outros programas, evitando repetição de código.
+Facilidade de manutenção: Alterações podem ser feitas apenas na função necessária sem modificar todo o sistema.
+Clareza do fluxo: O método main() apresenta o fluxo principal do sistema de maneira mais clara e organizada.
+Tamanho dos métodos: As funções menores tornam o código mais limpo, simples e fácil de testar.
+Coesão: Cada função executa apenas uma tarefa específica, melhorando a organização e a eficiência do sistema.
 
 ***************************************************************************************************************************************************************************
 
