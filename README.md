@@ -90,10 +90,26 @@ Tarefa 4 — Objetos e Referência em
 
 Descrição: Desenvolvimento de um programa em Java para demonstrar o comportamento de objetos em chamadas de métodos. A atividade utiliza uma classe `Produto` para mostrar que, embora Java utilize passagem por valor, o valor copiado em objetos é a referência, permitindo que alterações realizadas no objeto permaneçam após a execução do método.
 
-Instruções de execução:
+Intruções de execução:
+Execute a versão monolítica no VS Code inserindo o seguinte comando no terminal:
+1- javac ObjetosReferenciaMonolitico.java ( compila arquivo )
+2- java ObjetosReferenciaMonolitico ( executa o programa )
 
-javac aplicarDesconto.java ( compila arquivo )
-java aplicarDesconto ( executa programa )
+Execute a versão modularizada no VS Code inserindo o seguinte comando no terminal:
+1- javac aplicarDesconto.java ( compila arquivo )
+2- java aplicarDesconto ( executa o programa )
+
+Legibilidade: A versão modularizada apresenta melhor organização e compreensão, pois separa a lógica em métodos específicos. Já a monolítica concentra todas as instruções no main, tornando o código mais extenso e cansativo de ler.
+
+Reutilização: Na versão modularizada, o método aplicarDesconto() pode ser reutilizado em outros programas ou para diferentes objetos. Na monolítica, a lógica fica presa ao bloco principal.
+
+Facilidade de Manutenção: A modularização facilita alterações futuras, pois mudanças podem ser feitas apenas no método responsável. Na versão monolítica, localizar e modificar partes específicas do código é mais difícil.
+
+Clareza do Fluxo: Na versão modularizada, o main() mostra claramente o fluxo do programa: criação do objeto, chamada do método e exibição dos resultados. Na monolítica, todas as etapas ficam misturadas.
+
+Tamanho dos Métodos: A versão modularizada utiliza métodos menores e mais objetivos, deixando o código mais limpo. Já a monolítica concentra toda a lógica em um único método maior.
+
+Coesão: Na modularização, cada método possui apenas uma responsabilidade específica, aumentando a organização e eficiência do sistema. Na monolítica, diferentes responsabilidades ficam agrupadas no mesmo bloco de código.
 
 Java possui passagem por referência verdadeira? Não. Java utiliza apenas passagem por valor.
 
